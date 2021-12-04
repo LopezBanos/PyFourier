@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PyFourier/__init__.py
+src/PyFourier.egg-info/PKG-INFO
+src/PyFourier.egg-info/SOURCES.txt
+src/PyFourier.egg-info/dependency_links.txt
+src/PyFourier.egg-info/top_level.txt
