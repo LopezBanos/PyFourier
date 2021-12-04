@@ -4,9 +4,8 @@
 
 ![animation](https://github.com/LopezBanos/PyFourier/blob/master/images/DirectDomain.gif)
 
-QMsolve seeks to provide a solid and easy to use solver, capable of solving the Schrödinger equation for one and two particles, 
-and creating descriptive and stunning visualizations of its solutions both in 1D, 2D, and 3D.
-
+The PyFourier package allow you to work on the frequency domain which is neccesary in most of the cases. 
+![animation](https://github.com/LopezBanos/PyFourier/blob/master/images/FreqDomain.gif)
 
 ## Installation
 
