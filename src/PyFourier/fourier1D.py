@@ -19,22 +19,8 @@ class fourier:
             #[time_array,wave_points]
         return [time_array,(self.Amplitude)*np.sin(2*np.pi*(self.Frequency)*time_array)]
 
-    #WRAP FUNCTION
-
-#######################################3
-#GENERO MIS ONDAS
-w_1 = fourier(8,1,10,0,2,0.001)
-w_2 = fourier(3,1,25,0,2,0.001)
-
-t = w_1.wave()[0]
-y1 = w_1.wave()[1]
-y2 = w_2.wave()[1]
-A1 = w_1.Amplitude
-A2 = w_2.Amplitude
-
-###############################3
 class wrap_plot: 
-    def __init__(self,w_array,Amplitude_array,j):
+    def __init__(self,t,w_array,Amplitude_array,j):
         #PARAMETERS
         prec = 1/(1.1e3)
         freq_min = 1
@@ -73,8 +59,8 @@ class wrap_plot:
             ax_slide1 = plt.axes([0.25, 0.15, 0.65, 0.03]) # CREATE THE SLIDER BAR 1
             ax_slide2 = plt.axes([0.25, 0.1, 0.65, 0.03]) # CREATE THE SLIDER BAR 2
             ax_slide_wrap = plt.axes([0.25, 0.05, 0.65, 0.03]) # CREATE THE SLIDER BAR 3
-            freq1_factor = Slider(ax_slide1,"FREQ1",valmin=0.2,valmax=60.0,valinit=w_1.Frequency,color ='#ae00ff')
-            freq2_factor = Slider(ax_slide2,"FREQ2",valmin=0.2,valmax=60.0,valinit=w_2.Frequency,color ='#ff8c00')
+            freq1_factor = Slider(ax_slide1,"FREQ1",valmin=0.2,valmax=60.0,valinit=w_array[0].Frequency,color ='#ae00ff')
+            freq2_factor = Slider(ax_slide2,"FREQ2",valmin=0.2,valmax=60.0,valinit=w_array[1].Frequency,color ='#ff8c00')
             freq_wrap_factor = Slider(ax_slide_wrap,"FREQ_WRAP",valmin=0.2,valmax=60.0,valinit=1,color ='white')
             axs[0].set_title('Harmonics Waves',fontsize = 16)
             axs[0].set_xlabel('Time Domain',fontsize = 13)
@@ -153,7 +139,3 @@ class wrap_plot:
         
 
 
-
-
-
-wrap_plot([y1,y2],[A1,A2],0)

@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.cfg
 src/PyFourier/__init__.py
+src/PyFourier/fourier1D.py
 src/PyFourier.egg-info/PKG-INFO
 src/PyFourier.egg-info/SOURCES.txt
 src/PyFourier.egg-info/dependency_links.txt

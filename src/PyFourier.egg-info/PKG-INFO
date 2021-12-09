@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyFourier
-Version: 0.0.1
+Version: 0.0.2.2
 Summary: 'A module for visualizing Fourier transform and its properties'
 Home-page: https://github.com/LopezBanos/PyFourier
 Author: Sergio Lopez Banos
