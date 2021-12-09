@@ -1,0 +1,8 @@
+# ignore all logs
+*.toml
+
+# ignore setup.cfg
+*.cfg
+
+#ignore directory
+dist/ 
